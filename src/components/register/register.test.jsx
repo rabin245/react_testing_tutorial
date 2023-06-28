@@ -23,4 +23,10 @@ describe("Register component", () => {
     const alertElement = screen.getByRole("alert");
     expect(alertElement).toBeInTheDocument();
   });
+
+  it("should not show any error message when the component is loaded", () => {
+    render(<Register />);
+    const alertElement = screen.queryByRole("alert");
+    expect(alertElement).not.toBeInTheDocument();
+  });
 });
