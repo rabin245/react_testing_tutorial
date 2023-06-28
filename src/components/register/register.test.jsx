@@ -7,4 +7,10 @@ describe("Register component", () => {
     const element = screen.getByRole("heading", { level: 2, name: "Register" });
     expect(element).toBeInTheDocument();
   });
+
+  it("should render Register component identified with testId correctly", () => {
+    render(<Register />);
+    const element = screen.getByTestId("heading");
+    expect(element).toBeInTheDocument();
+  });
 });

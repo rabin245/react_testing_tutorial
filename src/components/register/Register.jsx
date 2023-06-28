@@ -59,7 +59,9 @@ const Register = () => {
   return (
     <div className="registration">
       <div className="container">
-        <h2 className="title">Register</h2>
+        <h2 className="title" data-testid="heading">
+          Register
+        </h2>
         <Form onSubmit={handleFormSubmit}>
           <h6 className="subtitle">
             Please enter your details below to register yourself.
