@@ -98,9 +98,10 @@ const Register = () => {
               onChange={handleInputChange}
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="password">
+          <Form.Group className="mb-3" controlId="skills">
             <Form.Label>Select your skills</Form.Label>
             <Select
+              data-testid="skills-dropdown"
               options={skills}
               isMulti
               value={selectedSkill}
